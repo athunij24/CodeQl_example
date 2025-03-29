@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 # Initialize the SQLite database
 def init_db():
+    commit = 1
     db_file = 'gradebook.db'
     conn = sqlite3.connect(db_file)
     c = conn.cursor()
